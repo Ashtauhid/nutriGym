@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back5"
+    android:orientation="vertical"
+    tools:context="com.example.mazhar.nutrigym.BMIActivity">
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/field_weight_label"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="0.06"
+        android:background="?android:attr/fastScrollTrackDrawable"
+        android:fontFamily="casual"
+        android:text="  Weight in kilograms:"
+        android:textColor="@android:drawable/screen_background_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="77dp" />
+
+    <EditText
+        android:id="@+id/field_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:background="?android:attr/activatedBackgroundIndicator"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:paddingLeft="10dp"
+        android:textSize="35sp"
+        tools:layout_editor_absoluteX="189dp"
+        tools:layout_editor_absoluteY="77dp" />
+
+    <TextView
+        android:id="@+id/field_height_label"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="9dp"
+        android:layout_weight="0.06"
+        android:background="?android:attr/fastScrollTrackDrawable"
+        android:fontFamily="casual"
+        android:text="  Height in feet and inches:"
+        android:textColor="@android:drawable/screen_background_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="161dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.06">
+
+
+        <EditText
+            android:id="@+id/field_height"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:paddingLeft="10dp"
+            android:textSize="35sp"
+            tools:layout_editor_absoluteX="189dp"
+            tools:layout_editor_absoluteY="161dp" />
+
+        <EditText
+            android:id="@+id/height_inch"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:paddingLeft="10dp"
+            android:textSize="35sp"
+            tools:layout_editor_absoluteX="189dp"
+            tools:layout_editor_absoluteY="161dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_calc"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/banner"
+        android:elevation="24dp"
+        android:text="Calculate BMI"
+        android:textColor="@android:drawable/screen_background_dark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="236dp" />
+
+    <EditText
+        android:id="@+id/view_result"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="25dp"
+        android:layout_weight="0.62"
+        android:background="?android:attr/activatedBackgroundIndicator"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="30dp"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="412dp" />
+
+    <EditText
+        android:id="@+id/view_msg"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginLeft="25dp"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@android:drawable/screen_background_light"
+        android:textColorHighlight="@android:drawable/screen_background_dark_transparent"
+        android:textSize="50sp"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="503dp" />
+</LinearLayout>
+

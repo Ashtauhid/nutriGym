@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back6"
+    android:orientation="vertical"
+    tools:context="com.example.mazhar.nutrigym.FDActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="Food Name: "
+            android:textColor="@android:drawable/screen_background_light"
+            android:textSize="21sp" />
+
+        <EditText
+            android:id="@+id/txtFoodName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="Calorie: "
+            android:textColor="@android:drawable/screen_background_light"
+            android:textSize="21sp" />
+
+        <EditText
+            android:id="@+id/txtCalorie"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:text="Food Catagory: "
+            android:textColor="@android:drawable/screen_background_light"
+            android:textSize="21sp" />
+
+        <Spinner
+            android:id="@+id/ddlFoodCatagory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/banner"
+        android:text="Add Data To DB" />
+
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/banner"
+        android:text="Show Data" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/banner"
+        android:text="Delete Data" />
+
+    <Button
+        android:id="@+id/btnBackMain"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:background="@drawable/banner"
+        android:text="Back" />
+
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back3"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.mazhar.nutrigym.SCActivity">
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00"
+        android:text="You've walked"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="40dp"
+        android:textStyle="italic"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_steps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="70dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp"
+        android:layout_weight="0.00"
+        android:text="Steps!"
+        android:textColor="#6c6c6c"
+        android:textSize="40dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top|center_horizontal|center"
+        android:text="Step stride in inch"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/stride"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.00"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:textColor="@android:drawable/screen_background_light"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/stridebtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/banner"
+        android:fontFamily="casual"
+        android:text="Distance traversed"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/viewthis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00"
+        android:text="TextView" />
+</LinearLayout>

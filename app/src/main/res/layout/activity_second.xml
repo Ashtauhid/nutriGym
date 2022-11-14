@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.mazhar.nutrigym.SecondActivity">
+
+
+<Button
+    android:id="@+id/btnSearch"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Search"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true" />
+
+<EditText
+    android:id="@+id/txtName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="85dp"
+    android:ems="10"
+    android:inputType="textPersonName"
+
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true" />
+
+<EditText
+    android:id="@+id/txtUnit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="29dp"
+    android:ems="10"
+    android:inputType="numberDecimal"
+    android:layout_below="@+id/txtName"
+    android:layout_alignParentEnd="true" />
+
+<TextView
+    android:id="@+id/textView"
+    android:textSize="20sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Amount taken: "
+    android:layout_alignBaseline="@+id/txtUnit"
+    android:layout_alignBottom="@+id/txtUnit"
+    android:layout_alignParentStart="true" />
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/txtName"
+    android:layout_alignBottom="@+id/txtName"
+    android:layout_alignParentStart="true"
+    android:text="Food Name: "
+    android:textSize="20sp" />
+
+<Button
+    android:id="@+id/btnBackSecond"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignEnd="@+id/btnSearch"
+    android:layout_below="@+id/btnSearch"
+    android:layout_marginTop="52dp"
+    android:text="Back" />
+</RelativeLayout>
